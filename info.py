@@ -22,12 +22,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split() 
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg'))
-FSUB_IMG = (environ.get('FSUB_IMG', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split() 
+PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
+MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
+SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8'))
+FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002539937252').split()]
