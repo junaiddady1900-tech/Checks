@@ -15,26 +15,26 @@ def is_enabled(value, default):
 
 
 SESSION = environ.get('SESSION', 'media_search')
-API_ID = int(environ.get('API_ID', '29236719'))
-API_HASH = environ.get('API_HASH', '1ccf1bd0a86af974e3210a55f662c062')
+API_ID = int(environ.get('API_ID', '23621595'))
+API_HASH = environ.get('API_HASH', 'de904be2b4cd4efe2ea728ded17ca77d'')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
-NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
-MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
-SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8'))
-FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
+PICS = (environ.get('PICS', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/56b5deb73f3b132e2bb73.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg'))
+FSUB_IMG = (environ.get('FSUB_IMG', 'https://graph.org/file/56b5deb73f3b132e2bb73.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '893383574').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002222465571').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002074744533'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002074744533'))  
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002159575204'))  
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002074744533')) 
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673').split()] 
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002314687215').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001860172104'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002245217353'))  
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002707429848'))  
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002314687215')) 
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002791473001') 
@@ -55,9 +55,9 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+m2-CnUFU_5c1MDQ1')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Arpitbotmovies')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+m2-CnUFU_5c1MDQ1')
 
-AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1003125071246 -1002920950664 -1002834808662") # add multiple channels here, separated by single space
+AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002294203953") # add multiple channels here, separated by single space
 AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL else []
-AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003125071246 -1002920950664') # add multiple channels here, separated by single space
+AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1002707429848 -1002314687215 -1002100057547') # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
