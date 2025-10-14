@@ -242,7 +242,7 @@ Nᴀᴍᴇ : {}
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
     CAPTION = """<b><a href="https://t.me/Prime_Movie_YT_Group">📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</a>  
-    Jᴏɪɴ Us ➠ @Film_CityOfficial"""
+    Jᴏɪɴ Us ➠ @SpyRadioHD"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
