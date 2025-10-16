@@ -29,7 +29,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/c4
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673').split()] 
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673 7990174185').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002539937252').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001860172104'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002245217353'))  
@@ -47,7 +47,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://clazedevoure_db_user:ICOfsgVgjL2LI2HY@cluster0.1oukuxl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Prime_Movie_YT_Group')
@@ -55,9 +55,9 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SpyRadioHD')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Prime_Movie_Request_bot')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/SpyRadioHD')
 
-AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002294203953") # add multiple channels here, separated by single space
+AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002765101816") # add multiple channels here, separated by single space
 AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL else []
-AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1002707429848 -1002314687215 -1002100057547') # add multiple channels here, separated by single space
+AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1002976809132') # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
