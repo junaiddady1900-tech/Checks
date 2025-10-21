@@ -22,12 +22,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
-NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
-MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
-SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8")
+PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
+MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
+SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8'))
-FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8')).split() 
+FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673 7990174185').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002929866678').split()]
@@ -42,7 +42,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002791473001') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://clazedevoure_db_user:ICOfsgVgjL2LI2HY@cluster0.1oukuxl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://firk03ai:ABcqwe1@&hg@cluster0.vhjxrp.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
