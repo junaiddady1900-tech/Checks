@@ -44,8 +44,6 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yeasinmonir00:RKdHbMjevt9jnoIm@cluster0.tyvlf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-
-Ata amat use karo")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
