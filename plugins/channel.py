@@ -88,10 +88,10 @@ async def send_movie_update(bot, file_name, caption):
         if poster:
             photo_file = io.BytesIO(poster)
             photo_file.name = await generate_random_filename()
-            await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons)), text = full_caption, reply_markup=InlineKeyboardMarkup(buttons))    
+            await bot.send_message(chat_id=-1002314687215, await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons)), text = full_caption, reply_markup=InlineKeyboardMarkup(buttons))    
         else:
             image_url = "https://te.legra.ph/file/88d845b4f8a024a71465d.jpg"   
-            await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons)), text = full_caption, reply_markup=InlineKeyboardMarkup(buttons))                
+            await bot.send_message(chat_id=-1002314687215, await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons)), text = full_caption, reply_markup=InlineKeyboardMarkup(buttons))                
     except Exception as e:
         print(f"Error in send_movie_update: {e}")
 
