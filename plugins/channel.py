@@ -27,8 +27,6 @@ SILENTX_UPDATE_CAPTION = """<blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤 𝖠�
 """
 
 notified_movies = set()
-user_reactions = {}
-reaction_counts = {}
 
 media_filter = filters.document | filters.video | filters.audio
 
