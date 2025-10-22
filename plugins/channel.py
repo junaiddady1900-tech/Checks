@@ -74,8 +74,8 @@ async def send_movie_update(bot, file_name, caption):
         poster = await fetch_movie_poster(title, year)        
         search_movie = file_name.replace(" ", "-")
         unique_id = generate_unique_id(search_movie)
-        reaction_counts[unique_id] = {"❤️": 0, "👍": 0, "👎": 0, "🔥": 0}
-        user_reactions[unique_id] = {}        
+        #reaction_counts[unique_id] = {"❤️": 0, "👍": 0, "👎": 0, "🔥": 0}
+   #     user_reactions[unique_id] = {}        
         full_caption = SILENTX_UPDATE_CAPTION.format(file_name, kind, quality, pixel, language, imdb_link)
         buttons = [[
         #    InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
@@ -105,7 +105,7 @@ async def reaction_handler(client, query):
         search_movie = data[2]
         new_reaction = data[3]
         user_id = query.from_user.id
-        emoji_map = {"heart": "❤️", "like": "👍", "dislike": "👎", "fire": "🔥"}
+        #emoji_map = {"heart": "❤️", "like": "👍", "dislike": "👎", "fire": "🔥"}
         if new_reaction not in emoji_map:
             return
         new_emoji = emoji_map[new_reaction]       
