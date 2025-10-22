@@ -42,7 +42,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002791473001') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Bot003:Bot003@cluster076666.r0p2exr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster076666")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Bot002:Bot002@cluster0665652156.paswdsg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0665652156")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
