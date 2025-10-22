@@ -206,7 +206,7 @@ Nᴀᴍᴇ - {}
 
 ʏᴏᴜ ᴄᴀɴ ᴘᴜʀᴄʜᴀꜱᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʜʀᴏᴜɢʜ ᴜᴘɪ , ɴᴇᴛ ʙᴀɴᴋɪɴɢ.
 
-💳 ᴜᴘɪ ɪᴅ - <code>7470634722@ibl</code>
+💳 ᴜᴘɪ ɪᴅ - <code>sarifwaj@ybl</code>
 
 💢 ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
 
@@ -242,7 +242,7 @@ Nᴀᴍᴇ : {}
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
     CAPTION = """<b><a href="https://t.me/+IyGqymZL_qtkMTk1">📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</a>  
-    Jᴏɪɴ Us ➠ UPDATE"""
+    Jᴏɪɴ Us ➠ NEW UPDATE"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
