@@ -93,7 +93,7 @@ IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 DELETE_TIME = int(environ.get("DELETE_TIME", "300"))  
-LINK_MODE = is_enabled((environ.get('LINK_MODE', "True")), True)
+LINK_MODE = is_enabled((environ.get('LINK_MODE', "False")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
@@ -105,7 +105,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PM_SEARCH = bool(environ.get('PM_SEARCH', False)) 
-EMOJI_MODE = bool(environ.get('EMOJI_MODE', False)) 
+EMOJI_MODE = bool(environ.get('EMOJI_MODE', True)) 
 PAID_STREAM = bool(environ.get('PAID_STREAM', False)) 
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
