@@ -22,15 +22,15 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b')).split() 
-NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
-MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
-SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/c45788f2-f5bc-434c-bb92-246bf93330f8'))
-FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/daed1540-0e97-4a36-a84a-ec839b401e5b')).split() 
+PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3")
+MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3")
+SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3'))
+FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/98a2c2f9-76f1-41d0-882f-c5892ef84ce3')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002929866678').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002904920278').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001860172104'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001860172104'))  
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002314687215'))  
