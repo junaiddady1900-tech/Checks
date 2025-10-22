@@ -50,7 +50,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://clazedevoure_db_user:ICOfsgVgjL2LI2HY@cluster0.1oukuxl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Prime_Movie_YT_Group')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+rzf7E7jwo001OTg1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+rzf7E7jwo001OTg1')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Botmaster55')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+rzf7E7jwo001OTg1')
