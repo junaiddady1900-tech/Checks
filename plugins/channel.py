@@ -23,7 +23,7 @@ SILENTX_UPDATE_CAPTION = """<i><b><blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤
 ✅ FILE NAME - {} #{}
 🎧 𝖠𝗎𝖽𝗂𝗈 - {}
 
-<b><blockquote>Uploaded By -@SpyRadioHd55</blockquote></b>
+<b><blockquote>Uploaded By -@SpyRadio55</blockquote></b>
 """
 
 notified_movies = set()
