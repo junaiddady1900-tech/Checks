@@ -18,12 +18,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
-SILENTX_UPDATE_CAPTION = """<blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤 𝖠𝖣𝖣𝖤𝖣</blockquote>
+SILENTX_UPDATE_CAPTION = """<i><b><blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤 𝖠𝖣𝖣𝖤𝖣</blockquote></b></i>
 
 ✅ FILE NAME - {} #{}
 🎧 𝖠𝗎𝖽𝗂𝗈 - {}
 
-<blockquote>Uploaded By -@Botmaster55</blockquote>
+<b><blockquote>Uploaded By -@Botmaster55</blockquote></b>
 """
 
 notified_movies = set()
@@ -83,7 +83,7 @@ async def send_movie_update(bot, file_name, caption):
         #    InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
         #    InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
+            InlineKeyboardButton('Get File ✅', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
         ]]
         if poster:
           #  photo_file = io.BytesIO(poster)
@@ -125,7 +125,7 @@ async def reaction_handler(client, query):
          #   InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
          #   InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
+            InlineKeyboardButton('Get File ✅', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
         ]]
         await query.message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(updated_buttons))
     except Exception as e:
