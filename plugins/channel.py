@@ -18,15 +18,23 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
-SILENTX_UPDATE_CAPTION = """<i><b><blockquote>📫 𝖭𝖤𝖶 𝖥𝖨𝖫𝖤 𝖠𝖣𝖣𝖤𝖣</blockquote></b></i>
+SILENTX_UPDATE_CAPTION = """<blockquote><b>💯 MOVIE NAME PER CLICK KARO COPY HO JAYAGA NAME USKE BADH GROUP PE JAKE SEARCH KARO👇👇</b></blockquote>
 
-✅ FILE NAME - {} #{}
-🎧 𝖠𝗎𝖽𝗂𝗈 - {}
+♻️ <b><i>File name:</i></b> <code>{}</code>
+🖥️ <b><i>Category:</i></b> {}
+🩻 <b><i>Quality:</i></b> <code>{}</code>
+💿 <b><i>Format:</i></b> <code>{}</code>
+🌐 <b><i>Audio:</i></b> <code>{}</code>
 
-<b><blockquote>Uploaded By -@Prime_Movie_Request_bot</blockquote></b>
-"""
+━━━━━━━━━━━━━━━━━━━
+🔍 <b>Search Movies Here:</b> <a href="https://t.me/+x4K_Hw3BTTs1ZDE1">🎞️ 𝘔𝘖𝘝𝘐𝘌 𝘔𝘈𝘚𝘈𝘓𝘈</a>
+━━━━━━━━━━━━━━━━━━━
+
+<blockquote>⚡ Powered by <b>@ClipMateBhai</b></blockquote>"""
 
 notified_movies = set()
+user_reactions = {}
+reaction_counts = {}
 
 media_filter = filters.document | filters.video | filters.audio
 
@@ -74,24 +82,24 @@ async def send_movie_update(bot, file_name, caption):
         poster = await fetch_movie_poster(title, year)        
         search_movie = file_name.replace(" ", "-")
         unique_id = generate_unique_id(search_movie)
-        #reaction_counts[unique_id] = {"❤️": 0, "👍": 0, "👎": 0, "🔥": 0}
-   #     user_reactions[unique_id] = {}        
+        reaction_counts[unique_id] = {"❤️": 0, "👍": 0, "👎": 0, "🔥": 0}
+        user_reactions[unique_id] = {}        
         full_caption = SILENTX_UPDATE_CAPTION.format(file_name, kind, quality, pixel, language, imdb_link)
         buttons = [[
-        #    InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
-        #    InlineKeyboardButton(f"👍 {reaction_counts[unique_id]['👍']}", callback_data=f"r_{unique_id}_{search_movie}_like"),
-        #    InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
-        #    InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
+            InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
+            InlineKeyboardButton(f"👍 {reaction_counts[unique_id]['👍']}", callback_data=f"r_{unique_id}_{search_movie}_like"),
+            InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
+            InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File ✅', url=f'https://cosmofeed.com/vig/6901003d665e510013773eed')
+            InlineKeyboardButton('MOVIE SEARCH', url=f'https://t.me/Prime_Movie_YT_Group')
         ]]
         if poster:
-          #  photo_file = io.BytesIO(poster)
-          #  photo_file.name = await generate_random_filename()
-            await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons))    
+            photo_file = io.BytesIO(poster)
+            photo_file.name = await generate_random_filename()
+            await bot.send_photo(chat_id=MOVIE_UPDATE_CHANNEL, photo=photo_file, caption=full_caption, reply_markup=InlineKeyboardMarkup(buttons))    
         else:
-           # image_url = "https://te.legra.ph/file/88d845b4f8a024a71465d.jpg"   
-            await bot.send_message(chat_id=MOVIE_UPDATE_CHANNEL, text=full_caption, reply_markup=InlineKeyboardMarkup(buttons))                
+            image_url = "https://te.legra.ph/file/88d845b4f8a024a71465d.jpg"   
+            await bot.send_photo(chat_id=MOVIE_UPDATE_CHANNEL, photo=image_url, caption=full_caption, reply_markup=InlineKeyboardMarkup(buttons))                
     except Exception as e:
         print(f"Error in send_movie_update: {e}")
 
@@ -105,7 +113,7 @@ async def reaction_handler(client, query):
         search_movie = data[2]
         new_reaction = data[3]
         user_id = query.from_user.id
-        #emoji_map = {"heart": "❤️", "like": "👍", "dislike": "👎", "fire": "🔥"}
+        emoji_map = {"heart": "❤️", "like": "👍", "dislike": "👎", "fire": "🔥"}
         if new_reaction not in emoji_map:
             return
         new_emoji = emoji_map[new_reaction]       
@@ -120,12 +128,12 @@ async def reaction_handler(client, query):
         user_reactions[unique_id][user_id] = new_emoji
         reaction_counts[unique_id][new_emoji] += 1
         updated_buttons = [[
-         #   InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
-         #   InlineKeyboardButton(f"👍 {reaction_counts[unique_id]['👍']}", callback_data=f"r_{unique_id}_{search_movie}_like"),
-         #   InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
-         #   InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
+            InlineKeyboardButton(f"❤️ {reaction_counts[unique_id]['❤️']}", callback_data=f"r_{unique_id}_{search_movie}_heart"),                
+            InlineKeyboardButton(f"👍 {reaction_counts[unique_id]['👍']}", callback_data=f"r_{unique_id}_{search_movie}_like"),
+            InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
+            InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File ✅', url=f'https://cosmofeed.com/vig/6901003d665e510013773eed')
+            InlineKeyboardButton('Get File', url=f'https://t.me/+x4K_Hw3BTTs1ZDE1')
         ]]
         await query.message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(updated_buttons))
     except Exception as e:
