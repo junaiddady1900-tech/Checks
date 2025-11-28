@@ -47,7 +47,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://clazedevoure_db_user:ICOfsgVgjL2LI2HY@cluster0.1oukuxl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Rbes78nnByQ3Mzg1')
@@ -105,7 +105,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PM_SEARCH = bool(environ.get('PM_SEARCH', False)) 
-EMOJI_MODE = bool(environ.get('EMOJI_MODE', False)) 
+EMOJI_MODE = bool(environ.get('EMOJI_MODE', True)) 
 PAID_STREAM = bool(environ.get('PAID_STREAM', False)) 
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
