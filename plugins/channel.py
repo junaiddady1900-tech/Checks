@@ -91,7 +91,7 @@ async def send_movie_update(bot, file_name, caption):
             InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
             InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('MOVIE SEARCH', url=f'https://t.me/Prime_Movie_YT_Group')
+            InlineKeyboardButton('MOVIE SEARCH', url=f'https://t.me/+Rbes78nnByQ3Mzg1')
         ]]
         if poster:
             photo_file = io.BytesIO(poster)
@@ -133,7 +133,7 @@ async def reaction_handler(client, query):
             InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
             InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File', url=f'https://t.me/+x4K_Hw3BTTs1ZDE1')
+            InlineKeyboardButton('Get File', url=f'https://t.me/+Rbes78nnByQ3Mzg1')
         ]]
         await query.message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(updated_buttons))
     except Exception as e:
