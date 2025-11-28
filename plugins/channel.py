@@ -27,10 +27,10 @@ SILENTX_UPDATE_CAPTION = """<blockquote><b>💯 MOVIE NAME PER CLICK KARO COPY H
 🌐 <b><i>Audio:</i></b> <code>{}</code>
 
 ━━━━━━━━━━━━━━━━━━━
-🔍 <b>Search Movies Here:</b> <a href="https://t.me/movie_pro_1">🎞️ 𝘔𝘖𝘝𝘐𝘌 𝘔𝘈𝘚𝘈𝘓𝘈</a>
+🔍 <b>Search Movies Here:</b> <a href="https://t.me/movie_pro_1">🎞️ Power by MG</a>
 ━━━━━━━━━━━━━━━━━━━
 
-<blockquote>⚡ Powered by <b>@ClipMateBhai</b></blockquote>"""
+<blockquote>⚡ Powered by <b>@MOVEGOLDEN10</b></blockquote>"""
 
 notified_movies = set()
 user_reactions = {}
@@ -91,7 +91,7 @@ async def send_movie_update(bot, file_name, caption):
             InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
             InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('MOVIE SEARCH', url=f'https://t.me/+Rbes78nnByQ3Mzg1')
+            InlineKeyboardButton('MOVIE SEARCH', url=f'https://t.me/movie_pro_1')
         ]]
         if poster:
             photo_file = io.BytesIO(poster)
@@ -133,7 +133,7 @@ async def reaction_handler(client, query):
             InlineKeyboardButton(f"👎 {reaction_counts[unique_id]['👎']}", callback_data=f"r_{unique_id}_{search_movie}_dislike"),
             InlineKeyboardButton(f"🔥 {reaction_counts[unique_id]['🔥']}", callback_data=f"r_{unique_id}_{search_movie}_fire")
         ],[
-            InlineKeyboardButton('Get File', url=f'https://t.me/+Rbes78nnByQ3Mzg1')
+            InlineKeyboardButton('Get File', url=f'https://t.me/movie_pro_1')
         ]]
         await query.message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(updated_buttons))
     except Exception as e:
