@@ -27,7 +27,7 @@ SILENTX_UPDATE_CAPTION = """<blockquote><b>💯 MOVIE NAME PER CLICK KARO COPY H
 🌐 <b><i>Audio:</i></b> <code>{}</code>
 
 ━━━━━━━━━━━━━━━━━━━
-🔍 <b>Search Movies Here:</b> <a href="https://t.me/+x4K_Hw3BTTs1ZDE1">🎞️ 𝘔𝘖𝘝𝘐𝘌 𝘔𝘈𝘚𝘈𝘓𝘈</a>
+🔍 <b>Search Movies Here:</b> <a href="https://t.me/movie_pro_1">🎞️ 𝘔𝘖𝘝𝘐𝘌 𝘔𝘈𝘚𝘈𝘓𝘈</a>
 ━━━━━━━━━━━━━━━━━━━
 
 <blockquote>⚡ Powered by <b>@ClipMateBhai</b></blockquote>"""
