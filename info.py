@@ -137,9 +137,9 @@ else:
     ON_HEROKU = False
 HAS_SSL = bool(getenv('HAS_SSL', False))
 if HAS_SSL:
-    URL = "https://cooing-mavis-new11-e8286579.koyeb.app/".format(FQDN)
+    URL = "https://slippery-janna-newbot099-1b0d2cc4.koyeb.app/".format(FQDN)
 else:
-    URL = "https://cooing-mavis-new11-e8286579.koyeb.app/".format(FQDN)
+    URL = "https://slippery-janna-newbot099-1b0d2cc4.koyeb.app/".format(FQDN)
 
 
 REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"]
