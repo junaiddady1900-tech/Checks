@@ -55,9 +55,9 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+SJ8p6SD0AvcwNTc9')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/EclipseScript')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+SJ8p6SD0AvcwNTc9')
 
-AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002314687215") # add multiple channels here, separated by single space
+AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1003439134320") # add multiple channels here, separated by single space
 AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL else []
-AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1002220447911 -1002500863343 -1002314687215') # add multiple channels here, separated by single space
+AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003458625863') # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
