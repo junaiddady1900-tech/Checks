@@ -22,12 +22,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg')).split() 
-NOR_IMG = environ.get("NOR_IMG", "https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg'))
-FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg')).split() 
+PICS = (environ.get('PICS', 'https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36')).split() 
+NOR_IMG = environ.get("NOR_IMG", "https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36")
+MELCOW_VID = environ.get("MELCOW_VID", "https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36")
+SPELL_IMG = environ.get("SPELL_IMG", "https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36'))
+FSUB_IMG = (environ.get('FSUB_IMG', 'https://image.zaw-myo.workers.dev/image/124d9b4d-3317-46d3-956a-ebf6b499cd36')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6109674139 1249672673').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003329701177').split()]
@@ -61,8 +61,8 @@ AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003458625863') # add multi
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002314687215'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002314687215'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1003439134320'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1003439134320'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/payment_prime/9")
