@@ -29,12 +29,12 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg'))
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cKndCq8t/a7949fcd572c.jpg')).split() 
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2108966088 1249672673').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002904920278 -1002539937252').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002876863018'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002288387344'))  
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002500863343'))  
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002500863343')) 
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6109674139 1249672673').split()] 
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003329701177').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003318513553'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003318513553'))  
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003458625863'))  
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1003439134320')) 
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001548942423') 
@@ -44,16 +44,16 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_pro_1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVEGOLDEN10')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/thunderfyu')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+IpRnq_i6L0k0MTU9')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+qrI-d_DjWlxlM2Zl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+SJ8p6SD0AvcwNTc9')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/EclipseScript')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/+SJ8p6SD0AvcwNTc9')
 
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002314687215") # add multiple channels here, separated by single space
 AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL else []
