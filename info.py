@@ -60,7 +60,7 @@ AUTH_CHANNEL = [int(ch) for ch in AUTH_CHANNEL.strip().split()] if AUTH_CHANNEL 
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '-1003458625863') # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = [int(ch) for ch in AUTH_REQ_CHANNEL.strip().split()] if AUTH_REQ_CHANNEL else []
 
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002314687215'))
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002314687215'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
@@ -69,8 +69,8 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/payment_prime/9")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
 
-SHORTENER_API = environ.get("SHORTENER_API", "d6a2a1bae0a25c4aa2d4d3c3ad364d6306995a37")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "arolinks.com")
+SHORTENER_API = environ.get("SHORTENER_API", "5d113f15c357705ffda99f67b63b0fa2347449e9")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "https://just2earn.com")
 
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "")
